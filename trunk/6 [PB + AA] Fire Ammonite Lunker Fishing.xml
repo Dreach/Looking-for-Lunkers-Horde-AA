@@ -266,6 +266,46 @@
     <Wait Condition="false" Timeout="600" />
     <Custom Code="Lua.DoString(&quot;RunMacroText(\&quot;/script GetQuestReward()\&quot;)&quot;);" />
     <Wait Condition="false" Timeout="600" />
+    <Interact InteractType="NPC" Entry="85984" InteractDelay="0" GameObjectType="WorldObject" SpellFocus="Anvil" />
+    <Wait Condition="false" Timeout="600" />
+    <Custom Code="Lua.DoString(&quot;RunMacroText(\&quot;/script SelectGossipAvailableQuest(7)\&quot;)&quot;);" />
+    <Wait Condition="false" Timeout="600" />
+    <Custom Code="Lua.DoString(&quot;RunMacroText(\&quot;/script CompleteQuest()\&quot;)&quot;);" />
+    <Wait Condition="false" Timeout="600" />
+    <Custom Code="Lua.DoString(&quot;RunMacroText(\&quot;/script GetQuestReward()\&quot;)&quot;);" />
+    <Wait Condition="false" Timeout="600" />
+    <Interact InteractType="NPC" Entry="85984" InteractDelay="0" GameObjectType="WorldObject" SpellFocus="Anvil" />
+    <Wait Condition="false" Timeout="600" />
+    <Custom Code="Lua.DoString(&quot;RunMacroText(\&quot;/script SelectGossipAvailableQuest(7)\&quot;)&quot;);" />
+    <Wait Condition="false" Timeout="600" />
+    <Custom Code="Lua.DoString(&quot;RunMacroText(\&quot;/script CompleteQuest()\&quot;)&quot;);" />
+    <Wait Condition="false" Timeout="600" />
+    <Custom Code="Lua.DoString(&quot;RunMacroText(\&quot;/script GetQuestReward()\&quot;)&quot;);" />
+    <Wait Condition="false" Timeout="600" />
+    <Interact InteractType="NPC" Entry="85984" InteractDelay="0" GameObjectType="WorldObject" SpellFocus="Anvil" />
+    <Wait Condition="false" Timeout="600" />
+    <Custom Code="Lua.DoString(&quot;RunMacroText(\&quot;/script SelectGossipAvailableQuest(7)\&quot;)&quot;);" />
+    <Wait Condition="false" Timeout="600" />
+    <Custom Code="Lua.DoString(&quot;RunMacroText(\&quot;/script CompleteQuest()\&quot;)&quot;);" />
+    <Wait Condition="false" Timeout="600" />
+    <Custom Code="Lua.DoString(&quot;RunMacroText(\&quot;/script GetQuestReward()\&quot;)&quot;);" />
+    <Wait Condition="false" Timeout="600" />
+    <Interact InteractType="NPC" Entry="85984" InteractDelay="0" GameObjectType="WorldObject" SpellFocus="Anvil" />
+    <Wait Condition="false" Timeout="600" />
+    <Custom Code="Lua.DoString(&quot;RunMacroText(\&quot;/script SelectGossipAvailableQuest(7)\&quot;)&quot;);" />
+    <Wait Condition="false" Timeout="600" />
+    <Custom Code="Lua.DoString(&quot;RunMacroText(\&quot;/script CompleteQuest()\&quot;)&quot;);" />
+    <Wait Condition="false" Timeout="600" />
+    <Custom Code="Lua.DoString(&quot;RunMacroText(\&quot;/script GetQuestReward()\&quot;)&quot;);" />
+    <Wait Condition="false" Timeout="600" />
+    <Interact InteractType="NPC" Entry="85984" InteractDelay="0" GameObjectType="WorldObject" SpellFocus="Anvil" />
+    <Wait Condition="false" Timeout="600" />
+    <Custom Code="Lua.DoString(&quot;RunMacroText(\&quot;/script SelectGossipAvailableQuest(7)\&quot;)&quot;);" />
+    <Wait Condition="false" Timeout="600" />
+    <Custom Code="Lua.DoString(&quot;RunMacroText(\&quot;/script CompleteQuest()\&quot;)&quot;);" />
+    <Wait Condition="false" Timeout="600" />
+    <Custom Code="Lua.DoString(&quot;RunMacroText(\&quot;/script GetQuestReward()\&quot;)&quot;);" />
+    <Wait Condition="false" Timeout="600" />
   <CustomAction Code="Log(Colors.YellowGreen,&quot;All the Lunkers are done, We are tired and need to sleep!&quot;); " />
   <CustomAction Code=" Lua.DoString(&quot;Quit()&quot;);TreeRoot.Stop();" />
   </If>
