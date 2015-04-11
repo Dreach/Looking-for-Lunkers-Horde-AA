@@ -6,9 +6,12 @@
   <MoveTo Location="3952.194, 5094.054, 54.77723" MoveType="Location" Pathing="Navigator" Entry="0" />
   </If>
     <While Condition="InbagCount(116821) &lt; 5" IgnoreCanRun="True">
+  <If Condition="Me.Location.Distance(new WoWPoint(3952.194, 5094.054, 54.77723)) > 1">
+  <MoveTo Location="3952.194, 5094.054, 54.77723" MoveType="Location" Pathing="Navigator" Entry="0" />
+  </If>
      <If Condition="!Me.HasAura(&quot;Fat Sleeper Bait&quot;)" IgnoreCanRun="True">
      <Custom Code="Lua.DoString(&quot;UseItemByName(110289)&quot;);" />
-     <ChangeBotAction BotName="FishingBuddy" />
+     <ChangeBotAction BotName="AutoAngler" />
      </If>
     </While>
     <If Condition="InbagCount(116821) &lt; 5" IgnoreCanRun="True">
