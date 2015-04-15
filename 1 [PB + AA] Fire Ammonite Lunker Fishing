@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PBProfile>
+  <Custom Code="Lua.DoString(&quot;SetCVar(\&quot;AutoLootDefault\&quot;, 1)&quot;);" />
+  <If Condition="InbagCount(116819) &lt; 5" IgnoreCanRun="True">
+    <CustomAction Code="Log(Colors.YellowGreen,&quot;On your way to fish Fire Ammonite Lunkers&quot;); " />
+  <MoveTo Location="5533.764, 4818.148, 109.0717" MoveType="Location" Pathing="Navigator" Entry="0" />
+  </If>
+    <While Condition="InbagCount(116819) &lt; 5" IgnoreCanRun="True">
+    <If Condition="(Me.Location.Distance (new WoWPoint(5533.764, 4818.148, 109.0717)) > 10)" >
+    <MoveTo Location="5533.764, 4818.148, 109.0717" MoveType="Location" Pathing="Navigator" Entry="0" />
+    </If>
+      <If Condition="!Me.HasAura(&quot;Fire Ammonite Bait&quot;)" IgnoreCanRun="True">
+      <Custom Code="Lua.DoString(&quot;UseItemByName(110291)&quot;);" />
+      <ChangeBotAction BotName="AutoAngler" />
+    </If>
+   </While>
+
+  <If Condition="InbagCount(122696) &lt; 5" IgnoreCanRun="True">
+    <CustomAction Code="Log(Colors.YellowGreen,&quot;On your way to fish Sea Scorpion Lunkers&quot;);" />
+  <MoveTo Location="5570.281, 5007.922, 1.800462" MoveType="Location" Pathing="Navigator" Entry="0" />
+    </If>
+   <While Condition="InbagCount(122696) &lt; 5" IgnoreCanRun="True">
+    <If Condition="(Me.Location.Distance (new WoWPoint(5570.281, 5007.922, 1.800462)) > 10)" >
+    <MoveTo Location="5570.281, 5007.922, 1.800462" MoveType="Location" Pathing="Navigator" Entry="0" />
+    </If>
+    <If Condition="!Me.HasAura(&quot;Sea Scorpion Bait&quot;)" IgnoreCanRun="True">
+    <Custom Code="Lua.DoString(&quot;UseItemByName(110292)&quot;);" />
+    <ChangeBotAction BotName="AutoAngler" />
+    </If>
+   </While>
+    <If Condition="InbagCount(122696) &lt; 5" IgnoreCanRun="True">
+     <MoveTo MoveType="NearestFlight" />
+    </If>
+    <If Condition="TreeRoot.Current.Name != &quot;Questing&quot;" IgnoreCanRun="True">
+      <ChangeBot BotName="Questing" />
+    <LoadProfileAction ProfileType="Honorbuddy" Path="FP to Evermorn Springs, Gorgrond.xml" />
+    </If>
+</PBProfile>
