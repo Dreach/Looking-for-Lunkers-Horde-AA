@@ -6,9 +6,6 @@
   <MoveTo Location="6300.208, 803.5078, 111.7078" MoveType="Location" Pathing="Navigator" Entry="0" />
   </If>
     <While Condition="InbagCount(116822) &lt; 5" IgnoreCanRun="True">
-  <If Condition="Me.Location.Distance(new WoWPoint(6300.208, 803.5078, 111.7078)) > 1">
-  <MoveTo Location="6300.208, 803.5078, 111.7078" MoveType="Location" Pathing="Navigator" Entry="0" />
-  </If>
   <If Condition="!Me.HasAura(&quot;Jawless Skulker Bait&quot;)" IgnoreCanRun="True">
     <Custom Code="Lua.DoString(&quot;UseItemByName(110274)&quot;);" />
       <ChangeBotAction BotName="AutoAngler" />
