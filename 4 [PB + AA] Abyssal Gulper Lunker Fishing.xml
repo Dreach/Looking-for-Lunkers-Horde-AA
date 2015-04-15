@@ -6,6 +6,9 @@
   <MoveTo Location="17.28828, 1548.866, -11.51832" MoveType="Location" Pathing="Navigator" Entry="0" />
   </If>
     <While Condition="InbagCount(116818) &lt; 5" IgnoreCanRun="True">
+    <If Condition="(Me.Location.Distance (new WoWPoint(17.28828, 1548.866, -11.51832)) > 10)" >
+    <MoveTo Location="17.28828, 1548.866, -11.51832" MoveType="Location" Pathing="Navigator" Entry="0" />
+    </If>
      <If Condition="!Me.HasAura(&quot;Abyssal Gulper Eel Bait&quot;)" IgnoreCanRun="True">
      <Custom Code="Lua.DoString(&quot;UseItemByName(110293)&quot;);" />
      <ChangeBotAction BotName="AutoAngler" />
